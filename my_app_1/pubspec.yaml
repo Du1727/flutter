@@ -1,0 +1,37 @@
+# 앱 이름 
+name: my_app_1
+
+#앱 설명
+description: A new Flutter project.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+# 앱 버저
+version: 1.0.0+1
+
+# 다트 버전
+environment:
+  sdk: '>=2.19.3 <3.0.0'  #dart버전을 2.19 이상 3.0이하로 설정하겠다..
+
+# 종속성, 의존성, 라이브러리
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  # 버전 앞에 아무것도 없으면 - 버전 고정
+  # 버전 앞에 ^ 있으면 - 호환 가능한 최신버전 8.*.*
+  # 버전 앞에 ~ 있으면 - 버그가 수정된 최신 버전 8.1.*
+  # 그래서 보통은.. 앱 개발 시 ^ 사용
+  # 앱 개발 완료시 기호 없앰
+  # 앱 유지보수 시 ^ 또는 ~ 또는 최신버전 없데이트
+  # pubspec.lock 파일은 건들이지 않는다. (대신, git에 공유할때는 pubspec.lock, pubspace.yaml파일 둘다 깃에 올려야함)
+  bloc: ^8.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+flutter:
+
+  uses-material-design: true
+
